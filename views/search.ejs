@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Search</title>
+</head>
+<body>
+	<h1>Wooo search</h1>
+	<form method="GET" action="/search">
+		<input type="text" name="search" placeholder="Seach for Movie">
+		<button type="submit">Blah</button>
+	</form>
+<ul>
+	<% movies.forEach(function(movie){ %>
+		<li><%= movie.Title %></li>
+	<% }) %>
+</ul>
+</body>
+</html>
